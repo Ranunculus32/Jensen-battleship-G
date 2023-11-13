@@ -323,7 +323,7 @@ function promptPlayerForGuess(player) {
     console.error(
       `You must provide coordinates (0-${rows},0-${cols}) for a strike between at (row, col)`
     );
-    guess = promptPlayerForGuess(player); // try again
+    let guess = promptPlayerForGuess(player); // try again
   }
   return guess;
 }
